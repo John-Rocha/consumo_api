@@ -33,5 +33,6 @@ class ProdutoStore {
       log('Erro de requisição', stackTrace: s);
       error.value = e.toString();
     }
+    isLoading.value = false;
   }
 }

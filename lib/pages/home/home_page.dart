@@ -1,9 +1,8 @@
-import 'dart:html';
-
 import 'package:consumo_api/data/http/http_client.dart';
 import 'package:consumo_api/data/repositories/produto_repository.dart';
 import 'package:consumo_api/pages/home/store/produto_store.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,6 +16,11 @@ class _HomePageState extends State<HomePage> {
     repository: ProdutoRepository(
       client: HttpClient(),
     ),
+  );
+
+  NumberFormat real = NumberFormat.currency(
+    locale: 'pt_BR',
+    name: 'R\$',
   );
 
   @override
@@ -111,7 +115,7 @@ class _HomePageState extends State<HomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'R\$ ${produto.price}',
+                              real.format(produto.price),
                               style: const TextStyle(
                                 color: Colors.green,
                                 fontWeight: FontWeight.w600,

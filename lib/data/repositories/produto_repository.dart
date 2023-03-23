@@ -23,7 +23,7 @@ class ProdutoRepository implements IProdutoRepository {
 
     if (response.statusCode == 200) {
       final List<ProdutoModel> produtos = [];
-      final body = jsonDecode(response.body);
+      final Map<String, dynamic> body = jsonDecode(response.body);
 
       body['products'].map((item) {
         final produto = ProdutoModel.fromMap(item);

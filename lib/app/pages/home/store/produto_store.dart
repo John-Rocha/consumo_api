@@ -1,10 +1,10 @@
 import 'dart:developer';
 
+import 'package:consumo_api/app/data/http/exceptions.dart';
+import 'package:consumo_api/app/data/models/produto_model.dart';
 import 'package:flutter/material.dart';
 
-import 'package:consumo_api/data/http/exceptions.dart';
-import 'package:consumo_api/data/models/produto_model.dart';
-import 'package:consumo_api/data/repositories/produto_repository.dart';
+import '../../../data/repositories/produto_repository.dart';
 
 class ProdutoStore {
   final ProdutoRepository repository;

@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:consumo_api/data/http/http_client.dart';
-import 'package:consumo_api/data/models/produto_model.dart';
 import 'package:http/http.dart';
 
 import '../http/exceptions.dart';
+import '../http/http_client.dart';
+import '../models/produto_model.dart';
 
 abstract class IProdutoRepository {
   Future<List<ProdutoModel>> getProdutos();

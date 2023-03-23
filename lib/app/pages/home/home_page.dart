@@ -1,8 +1,9 @@
-import 'package:consumo_api/data/http/http_client.dart';
-import 'package:consumo_api/data/repositories/produto_repository.dart';
-import 'package:consumo_api/pages/home/store/produto_store.dart';
+import 'package:consumo_api/app/data/repositories/produto_repository.dart';
+import 'package:consumo_api/app/pages/home/store/produto_store.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+
+import '../../data/http/http_client.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

@@ -1,6 +1,10 @@
 # consumo_api
 
-A new Flutter project.
+Um projeto simples que faz o consumo de uma API no qual lista produtos.
+
+### Objetivo
+
+Tem como principal objetivo, a utilização de clean arch com os princípios do SOLID
 
 ## Getting Started
 
